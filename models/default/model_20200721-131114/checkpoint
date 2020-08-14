@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/iheb/Documents/RASA_NLU/rasa_nlu_AR/models/default/model_20200721-131114/component_1_EmbeddingIntentClassifier.ckpt"
+all_model_checkpoint_paths: "/home/iheb/Documents/RASA_NLU/rasa_nlu_AR/models/default/model_20200721-131114/component_1_EmbeddingIntentClassifier.ckpt"

@@ -1,0 +1,269 @@
+{
+	"rasa_nlu_data": {
+		"regex_features": [{
+				"name": "zipcode",
+				"pattern": "[0-9]{5}"
+			},
+			{
+				"name": "greet",
+				"pattern": "hey[^\\s]*"
+			}
+		],
+		"entity_synonyms": [{
+			"value": "",
+			"synonyms": ["", "", ""]
+		}],
+		"common_examples": [{
+				"text": "السلام",
+				"intent": "salutation",
+				"entities": []
+			},
+			{
+				"text": "أهلا",
+				"intent": "salutation",
+				"entities": []
+			},
+			{
+				"text": "سلام",
+				"intent": "salutation",
+				"entities": []
+			},
+			{
+				"text": "على خير",
+				"intent": "au-revoir",
+				"entities": []
+			},
+			{
+				"text": "إلى القاء",
+				"intent": "au-revoir",
+				"entities": []
+			},
+			{
+				"text": "وداعاً",
+				"intent": "au-revoir",
+				"entities": []
+			},
+			{
+				"text": "وداعاً",
+				"intent": "au-revoir",
+				"entities": []
+			},
+			{
+				"text": "تصبح على خير",
+				"intent": "au-revoir",
+				"entities": []
+			},
+			{
+				"text": "في أمان الله",
+				"intent": "au-revoir",
+				"entities": []
+			},
+			{
+				"text": "امسيك على خير",
+				"intent": "au-revoir",
+				"entities": []
+			},
+			{
+				"text": "كيف حال الطقس الآن ؟",
+				"intent": "ask/weather",
+				"entities": []
+			},
+			{
+				"text": "هل هناك سحاب ؟",
+				"intent": "ask/weather",
+				"entities": []
+			},
+			{
+				"text": "هل ستمطر غداً ؟",
+				"intent": "ask/weather",
+				"entities": []
+			},
+			{
+				"text": "كيف هو الطقس فالخارج  ؟",
+				"intent": "ask/weather",
+				"entities": []
+			},
+			{
+				"text": "هل الطقس جميل ؟",
+				"intent": "ask/weather",
+				"entities": []
+			},
+			{
+				"text": "كيف حال الطقس الآن ؟",
+				"intent": "ask/weather",
+				"entities": []
+			},
+			{
+				"text": "ما هو اسمك ؟",
+				"intent": "ask/name",
+				"entities": []
+			},
+			{
+				"text": "كيف يمكنني أن أناديك ؟",
+				"intent": "ask/name",
+				"entities": []
+			},
+			{
+				"text": "ما إسم اخينا ؟",
+				"intent": "ask/name",
+				"entities": []
+			},
+			{
+				"text": "ما إسم أختنا ؟",
+				"intent": "ask/name",
+				"entities": []
+			},
+			{
+				"text": "بأي إسم انديك ؟",
+				"intent": "ask/name",
+				"entities": []
+			},
+			{
+				"text": "أريد أن احجز نهارين في فندق ؟",
+				"intent": "question/hotel_reservation",
+				"entities": []
+			},
+			{
+				"text": "بكم ليلتين  في فندق  خمس نجوم ؟",
+				"intent": "question/hotel_reservation",
+				"entities": []
+			},
+			{
+				"text": "هل هناك غرفة للحجز في فندق الياسمين ؟",
+				"intent": "question/hotel_reservation",
+				"entities": [{
+					"start": 8,
+					"end": 15,
+					"value": "الياسمين",
+					"entity": "hotel_name"
+				}]
+			},
+			{
+				"text": "هل بامكاني حجز غرفة في فندق افريكا",
+				"intent": "question/hotel_reservation",
+				"entities": [{
+					"start": 8,
+					"end": 15,
+					"value": "افريكا",
+					"entity": "hotel_name"
+				}]
+			},
+			{
+				"text": "هل تتلقى تأشيرة دفع",
+				"intent": "question/hotel_serices/payment",
+				"entities": [{
+					"start": 8,
+					"end": 15,
+					"value": "تأشيرة",
+					"entity": "card_type"
+				}]
+			},
+			{
+				"text": "هل تتلقى بطاقة تأشيرة دفع؟",
+				"intent": "question/hotel_serices/payment",
+				"entities": [{
+					"start": 8,
+					"end": 15,
+					"value": "تأشيرة",
+					"entity": "card_type"
+				}]
+			},
+			{
+				"text": "يمكنني أن أدفع مع بالبطاقة الرئيسية",
+				"intent": "question/hotel_serices/payment",
+				"entities": [{
+					"start": 8,
+					"end": 15,
+					"value": "البطاقة الرئيسية",
+					"entity": "card_type"
+				}]
+			},
+			{
+				"text": "هل أدفع رسوم الحجز؟",
+				"intent": "question/hotel_serices/payment",
+				"entities": []
+			},
+			{
+				"text": "أريد أن أدفع نقدا",
+				"intent": "question/hotel_serices/payment",
+				"entities": []
+			},
+			{
+				"text": "هل يحتاج الفندق إلى وديعة أو دفعة مقدما؟",
+				"intent": "question/hotel_serices/payment",
+				"entities": []
+			},
+			{
+				"text": "كيف يمكنني أن ادفع ",
+				"intent": "question/hotel_serices/payment",
+				"entities": []
+			},
+			{
+				"text": "ما هي محطات المترو الأقرب؟",
+				"intent": "question/trasnport",
+				"entities": []
+			},
+			{
+				"text": "أي خطوط مترو؟",
+				"intent": "question/trasnport",
+				"entities": []
+			},
+			{
+				"text": "هل تعتبر الحافلة فكرة جيدة؟",
+				"intent": "question/trasnport",
+				"entities": []
+			},
+			{
+				"text": "أريد استئجار سيارة",
+				"intent": "rent_a_car",
+				"entities": []
+			},
+			{
+				"text": "هل لديك ميتسوبيشي لاستئجار ؟",
+				"intent": "rent_a_car",
+				"entities": [{
+					"start": 8,
+					"end": 15,
+					"value": "ميتسوبيشي",
+					"entity": "car_type"
+				}]
+			},
+			{
+				"text": "يمكن أن يكون لي تويوتا لاستئجار",
+				"intent": "rent_a_car",
+				"entities": [{
+					"start": 8,
+					"end": 15,
+					"value": "تويوتا",
+					"entity": "car_type"
+				}]
+			},
+			{
+				"text": "أريد أن استئجار باجيرو الرياضة ",
+				"intent": "rent_a_car",
+				"entities": [{
+					"start": 8,
+					"end": 15,
+					"value": "باجيرو الرياضة",
+					"entity": "car_type"
+				}]
+			},
+			{
+				"text": "هل الويفي مجاني؟",
+				"intent": "question/hotel_serices/equipements",
+				"entities": []
+			},
+			{
+				"text": "هل لدينا مجفف شعر؟",
+				"intent": "question/hotel_serices/equipements",
+				"entities": []
+			},
+			{
+				"text": " هل هناك حوض سباحة ؟",
+				"intent": "question/hotel_serices/equipements",
+				"entities": []
+			}
+
+		]
+	}
+}

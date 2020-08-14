@@ -1,0 +1,112 @@
+{
+  "rasa_nlu_data": {
+    "regex_features": [
+      {
+        "name": "zipcode",
+        "pattern": "[0-9]{5}"
+      }
+    ],
+    "common_examples": [
+      {
+        "text": "السلام",
+        "intent": "salutation",
+        "entities": []
+      }, 
+      {
+        "text": "أهلا",
+        "intent": "greet",
+        "entities": []
+      }, 
+      {
+        "text": "سلام",
+        "intent": "salutation",
+        "entities": []
+      }, 
+      {
+        "text": "على خير", 
+        "intent": "salutation", 
+        "entities": []
+      }, 
+      {
+        "text": "إلى القاء", 
+        "intent": "au-revoir", 
+        "entities": []
+      },
+      {
+        "text": "وداعاً",
+        "intent": "au-revoir",
+        "entities": []
+      },
+      {
+        "text": "تصبح على خير",
+        "intent": "au-revoir",
+        "entities": []
+      },
+      {
+        "text": "كيف حال الطقس الآن ؟", 
+        "intent": "ask/weather", 
+        "entities": []
+      }, 
+      {
+        "text": "هل هناك سحاب ؟", 
+        "intent": "ask/weather", 
+        "entities": []
+      }, 
+      {
+        "text": "هل ستمطر غداً ؟", 
+        "intent": "ask/weather", 
+        "entities": []
+      },
+      {
+        "text": "أريد استئجار سيارة",
+        "intent": "rent_a_car",
+        "entities": []
+      },
+      {
+        "text": "هل لديك ميتسوبيشي لاستئجار ؟",
+        "intent": "rent_a_car",
+        "entities": [{
+					"start": 8,
+					"end": 16,
+					"value": "ميتسوبيشي",
+					"entity": "car_type"
+				}]
+      },
+      {
+        "text": "يمكن أن يكون لي تويوتا لاستئجار",
+        "intent": "rent_a_car",
+        "entities": [{
+					"start": 8,
+					"end": 17,
+					"value": "تويوتا",
+					"entity": "car_type"
+				}]
+      },     
+      {
+        "text": "يمكنني أن أدفع مع بالبطاقة الرئيسية",
+        "intent": "question/hotel_serices/payment",
+        "entities": [
+          {
+            "start": 8,
+            "end": 15,
+            "value": "البطاقة الرئيسية",
+            "entity": "card_type"
+          }
+        ]
+      },
+      {
+        "text": "هل تتلقى بطاقة تأشيرة دفع؟",
+        "intent": "question/hotel_serices/payment",
+        "entities": [
+          {
+            "start": 8,
+            "end": 14,
+            "value": "تأشيرة",
+            "entity": "card_type"
+          }
+        ]
+      }
+     
+    ]
+  }
+}

@@ -1,0 +1,611 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "salutation",
+        "text": "السلام"
+      },
+      {
+        "intent": "salutation",
+        "text": "تحية"
+      },
+      {
+        "intent": "salutation",
+        "text": "اهلا"
+      },
+      {
+        "intent": "salutation",
+        "text": "سلام"
+      },
+      {
+        "intent": "salutation",
+        "text": "مرحبا"
+      },
+      {
+        "intent": "salutation",
+        "text": "اهلا بك"
+      },
+      {
+        "intent": "au_revoir",
+        "text": "على خير"
+      },
+      {
+        "intent": "au_revoir",
+        "text": "الى القاء"
+      },
+      {
+        "intent": "au_revoir",
+        "text": "الوداع"
+      },
+      {
+        "intent": "au_revoir",
+        "text": "وداعاً"
+      },
+      {
+        "intent": "au_revoir",
+        "text": "تصبح على خير"
+      },
+      {
+        "intent": "au_revoir",
+        "text": "امسيك على خير"
+      },
+      {
+        "intent": "au_revoir",
+        "text": "في امان الله"
+      },
+      {
+        "intent": "reservation",
+        "text": "اريد ان احجز  فندق"
+      },
+      {
+        "intent": "reservation",
+        "text": "هل هناك غرفة للحجز"
+      },
+      {
+        "intent": "reservation",
+        "text": "هل يمكنني ان احجز فندق"
+      },
+      {
+        "intent": "reservation",
+        "text": "هل هناك غرف للحجز في فندق"
+      },
+      {
+        "intent": "reservation",
+        "text": "فندق من فضلك"
+      },
+      {
+        "intent": "reservation",
+        "text": "غرفة في فندق"
+      },
+      {
+        "intent": "reservation/nbr_person",
+        "entities": [
+          {
+            "start": 19,
+            "end": 29,
+            "value": "ثلاث اشخاص",
+            "entity": "nbr_person"
+          }
+        ],
+        "text": "اريد ان احجز فندق لثلاث اشخاص"
+      },
+      {
+        "intent": "reservation/nbr_person",
+        "entities": [
+          {
+            "start": 19,
+            "end": 24,
+            "value": "شخصين",
+            "entity": "nbr_person"
+          }
+        ],
+        "text": "أريد أن احجز فندق لشخصين"
+      },
+      {
+        "intent": "reservation/nbr_person",
+        "text": "هل هناك غرفة للحجز ل[شخص واحد] nbr_person)"
+      },
+      {
+        "intent": "reservation/nbr_person",
+        "entities": [
+          {
+            "start": 20,
+            "end": 25,
+            "value": "شخصان",
+            "entity": "nbr_person"
+          }
+        ],
+        "text": "هل هناك غرفة للحجز لشخصان"
+      },
+      {
+        "intent": "reservation/nbr_person",
+        "entities": [
+          {
+            "start": 24,
+            "end": 34,
+            "value": "ثلاث اشخاص",
+            "entity": "nbr_person"
+          }
+        ],
+        "text": "هل يمكنني أن احجز فندق لثلاث اشخاص"
+      },
+      {
+        "intent": "reservation/nbr_person",
+        "entities": [
+          {
+            "start": 24,
+            "end": 32,
+            "value": "شخص واحد",
+            "entity": "nbr_person"
+          }
+        ],
+        "text": "هل يمكنني أن احجز فندق لشخص واحد"
+      },
+      {
+        "intent": "reservation/nbr_person",
+        "entities": [
+          {
+            "start": 21,
+            "end": 26,
+            "value": "شخصان",
+            "entity": "nbr_person"
+          }
+        ],
+        "text": "هل هناك حجز في فندق لشخصان"
+      },
+      {
+        "intent": "reservation/nbr_person",
+        "entities": [
+          {
+            "start": 21,
+            "end": 31,
+            "value": "اربع اشخاص",
+            "entity": "nbr_person"
+          }
+        ],
+        "text": "هل هناك حجز في فندق لاربع اشخاص"
+      },
+      {
+        "intent": "reservation/nbr_person",
+        "text": "هل هناك غرف للحجز في فندق   $hotel_name$ لمدة $nbr_night$ ؟"
+      },
+      {
+        "intent": "reservation/nbr_person",
+        "entities": [
+          {
+            "start": 6,
+            "end": 11,
+            "value": "شخصين",
+            "entity": "nbr_person"
+          }
+        ],
+        "text": "فندق لشخصين من فضلك"
+      },
+      {
+        "intent": "reservation/nbr_person",
+        "entities": [
+          {
+            "start": 6,
+            "end": 16,
+            "value": "ثلاث اشخاص",
+            "entity": "nbr_person"
+          }
+        ],
+        "text": "فندق لثلاث اشخاص من فضلك"
+      },
+      {
+        "intent": "reservation/nbr_person",
+        "entities": [
+          {
+            "start": 6,
+            "end": 11,
+            "value": "شخصين",
+            "entity": "nbr_person"
+          }
+        ],
+        "text": "غرفة لشخصين من فضلك"
+      },
+      {
+        "intent": "reservation/nbr_person",
+        "entities": [
+          {
+            "start": 6,
+            "end": 16,
+            "value": "ثلاث اشخاص",
+            "entity": "nbr_person"
+          }
+        ],
+        "text": "غرفة لثلاث اشخاص من فضلك"
+      },
+      {
+        "intent": "reservation/nb_adlult+nb_enfant",
+        "entities": [
+          {
+            "start": 5,
+            "end": 10,
+            "value": "شخصين",
+            "entity": "nb_adult"
+          },
+          {
+            "start": 13,
+            "end": 18,
+            "value": "طفلان",
+            "entity": "nb_enfant"
+          }
+        ],
+        "text": "حجز لشخصين و طفلان"
+      },
+      {
+        "intent": "reservation/nb_adlult+nb_enfant",
+        "entities": [
+          {
+            "start": 5,
+            "end": 15,
+            "value": "ثلاث اشخاص",
+            "entity": "nb_adult"
+          },
+          {
+            "start": 18,
+            "end": 28,
+            "value": "ثلاث اطفال",
+            "entity": "nb_enfant"
+          }
+        ],
+        "text": "حجز لثلاث اشخاص و ثلاث اطفال"
+      },
+      {
+        "intent": "reservation/nb_adlult+nb_enfant",
+        "entities": [
+          {
+            "start": 5,
+            "end": 16,
+            "value": "أربعة أطفال",
+            "entity": "nb_enfant"
+          },
+          {
+            "start": 19,
+            "end": 24,
+            "value": "شخصان",
+            "entity": "nb_adult"
+          }
+        ],
+        "text": "حجز لأربعة أطفال و شخصان"
+      },
+      {
+        "intent": "reservation/nb_adlult+nb_enfant",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "ثلاث اشخاص",
+            "entity": "nb_adult"
+          },
+          {
+            "start": 13,
+            "end": 23,
+            "value": "ثلاث اطفال",
+            "entity": "nb_enfant"
+          }
+        ],
+        "text": "ثلاث اشخاص و ثلاث اطفال"
+      },
+      {
+        "intent": "reservation/nb_adlult+nb_enfant",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "شخصين",
+            "entity": "nb_adult"
+          },
+          {
+            "start": 8,
+            "end": 13,
+            "value": "طفلين",
+            "entity": "nb_enfant"
+          }
+        ],
+        "text": "شخصين و طفلين"
+      },
+      {
+        "intent": "reservation/nb_adlult+nb_enfant",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "ثلاث اشخاص",
+            "entity": "nb_adult"
+          },
+          {
+            "start": 13,
+            "end": 23,
+            "value": "ثلاث اطفال",
+            "entity": "nb_enfant"
+          }
+        ],
+        "text": "ثلاث اشخاص و ثلاث اطفال"
+      },
+      {
+        "intent": "reservation/nb_adlult+nb_enfant",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "ثلاثة اشخاص",
+            "entity": "nb_adult"
+          },
+          {
+            "start": 14,
+            "end": 25,
+            "value": "ثلاثة اطفال",
+            "entity": "nb_enfant"
+          }
+        ],
+        "text": "ثلاثة اشخاص و ثلاثة اطفال"
+      },
+      {
+        "intent": "reservation/nb_adlult+nb_enfant",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "شخصان",
+            "entity": "nb_adult"
+          },
+          {
+            "start": 8,
+            "end": 16,
+            "value": "طفل واحد",
+            "entity": "nb_enfant"
+          }
+        ],
+        "text": "شخصان و طفل واحد"
+      },
+      {
+        "intent": "reservation/nb_adlult+nb_enfant",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "ثلاث اشخاص",
+            "entity": "nb_adult"
+          },
+          {
+            "start": 13,
+            "end": 18,
+            "value": "طفلان",
+            "entity": "nb_enfant"
+          }
+        ],
+        "text": "ثلاث اشخاص و طفلان"
+      },
+      {
+        "intent": "reservation/nb_adlult+nb_enfant",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "شخصين",
+            "entity": "nb_adult"
+          },
+          {
+            "start": 8,
+            "end": 18,
+            "value": "ثلاث اطفال",
+            "entity": "nb_enfant"
+          }
+        ],
+        "text": "شخصين و ثلاث اطفال"
+      },
+      {
+        "intent": "reservation/nb_adlult+nb_enfant",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "شخصين",
+            "entity": "nb_adult"
+          },
+          {
+            "start": 8,
+            "end": 19,
+            "value": "ثلاثة اطفال",
+            "entity": "nb_enfant"
+          }
+        ],
+        "text": "شخصين و ثلاثة اطفال"
+      },
+      {
+        "intent": "reservation/nb_adlult+nb_enfant",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "شخصان",
+            "entity": "nb_adult"
+          },
+          {
+            "start": 8,
+            "end": 18,
+            "value": "ثلاث اطفال",
+            "entity": "nb_enfant"
+          }
+        ],
+        "text": "شخصان و ثلاث اطفال"
+      },
+      {
+        "intent": "reservation/nb_adlult+nb_enfant",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "شخصان",
+            "entity": "nb_adult"
+          },
+          {
+            "start": 8,
+            "end": 19,
+            "value": "ثلاثة اطفال",
+            "entity": "nb_enfant"
+          }
+        ],
+        "text": "شخصان و ثلاثة اطفال"
+      },
+      {
+        "intent": "reservation/nb_adlult+nb_enfant",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "طفل واحد",
+            "entity": "nb_adult"
+          },
+          {
+            "start": 11,
+            "end": 16,
+            "value": "شخصان",
+            "entity": "nb_enfant"
+          }
+        ],
+        "text": "طفل واحد و شخصان"
+      },
+      {
+        "intent": "hotel_search",
+        "text": "أريد أن أسأل على فندق"
+      },
+      {
+        "intent": "hotel_search",
+        "text": "هل يمكنني أن اتحصل على بعض المعلومات على فندق"
+      },
+      {
+        "intent": "hotel_search/etoile",
+        "entities": [
+          {
+            "start": 13,
+            "end": 22,
+            "value": "ثلاث نجوم",
+            "entity": "nbr_etoile"
+          }
+        ],
+        "text": "أريد فندق ذو ثلاث نجوم"
+      },
+      {
+        "intent": "hotel_search/etoile",
+        "entities": [
+          {
+            "start": 13,
+            "end": 22,
+            "value": "اربع نجوم",
+            "entity": "nbr_etoile"
+          }
+        ],
+        "text": "أريد فندق ذو اربع نجوم"
+      },
+      {
+        "intent": "hotel_search/etoile",
+        "entities": [
+          {
+            "start": 8,
+            "end": 17,
+            "value": "اربع نجوم",
+            "entity": "nbr_etoile"
+          }
+        ],
+        "text": "فندق ذو اربع نجوم من فضلك"
+      },
+      {
+        "intent": "hotel_search/etoile",
+        "entities": [
+          {
+            "start": 14,
+            "end": 24,
+            "value": "اربعة نجوم",
+            "entity": "nbr_etoile"
+          }
+        ],
+        "text": "هل هناك فندق لاربعة نجوم"
+      },
+      {
+        "intent": "hotel_search/etoile",
+        "entities": [
+          {
+            "start": 14,
+            "end": 20,
+            "value": "نجمتان",
+            "entity": "nbr_etoile"
+          }
+        ],
+        "text": "هل هناك فندق لنجمتان"
+      },
+      {
+        "intent": "reservation/nb_enfant_inf_2ans",
+        "text": "صفر"
+      },
+      {
+        "intent": "reservation/nb_enfant_inf_2ans",
+        "text": "واحد"
+      },
+      {
+        "intent": "reservation/nb_enfant_inf_2ans",
+        "text": "واحدة"
+      },
+      {
+        "intent": "reservation/nb_enfant_inf_2ans",
+        "text": "اثنان"
+      },
+      {
+        "intent": "reservation/nb_enfant_inf_2ans",
+        "text": "اثنين"
+      },
+      {
+        "intent": "reservation/nb_enfant_inf_2ans",
+        "text": "ثلاث"
+      },
+      {
+        "intent": "reservation/nb_enfant_inf_2ans",
+        "text": "ثلاثة"
+      },
+      {
+        "intent": "reservation/nb_enfant_inf_2ans",
+        "text": "اربع"
+      },
+      {
+        "intent": "reservation/nb_enfant_inf_2ans",
+        "text": "اربعة"
+      },
+      {
+        "intent": "reservation/nb_enfant_inf_2ans",
+        "text": "خمس"
+      },
+      {
+        "intent": "reservation/nb_enfant_inf_2ans",
+        "text": "خمسة"
+      }
+    ],
+    "regex_features": [
+      {
+        "name": "greet",
+        "pattern": "hey[^\\s]*"
+      },
+      {
+        "name": "zipcode",
+        "pattern": "[0-9]{5}"
+      }
+    ],
+    "lookup_tables": [
+      {
+        "name": "nbr_person",
+        "elements": "lookups/new_lookups/persons.txt"
+      },
+      {
+        "name": "nb_enfant",
+        "elements": "lookups/new_lookups/childs.txt"
+      },
+      {
+        "name": "nb_adult",
+        "elements": "lookups/new_lookups/adults.txt"
+      }
+    ],
+    "entity_synonyms": []
+  }
+}
